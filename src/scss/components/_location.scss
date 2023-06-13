@@ -1,0 +1,167 @@
+.location {
+
+    &__list {
+        @include lg{
+            display: flex;
+            min-height: 552px;
+            justify-content: space-between;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        }
+
+        @include xl{
+            min-height: 780px;
+        }
+
+        @include xxl{
+            min-height: 100vh;
+            max-width: 2560px;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 50px 16px;
+        min-height: 273px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+        @include sm{
+            padding-left: 32px;
+            padding-right: 32px;
+            min-height: 200px;
+        }
+
+        @include lg{
+            background-image: none;
+            flex: 0 0 calc(100% / 5);
+            padding: 0;
+        }
+
+        &:not(:last-child)::after{
+            content: '';
+            position: absolute;
+            z-index: 5;
+            display: block;
+            bottom: 0;
+            right: 50%;
+            background-color: $second;
+            height: 0.5px;
+            width: calc(100% - 32px);
+            transform: translate(50%, 0.5px);
+
+            @include lg{
+                bottom: 50%;
+                right: 0;
+                transform: translate(0.5px, 50%);
+                height: calc(100% - 186px);
+                width: 0.5px;
+            }
+
+            @include xl{
+                height: calc(100% - 200px);
+            }
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        &_mammals::before {
+            background-image: url('../img/location/mammals.jpg');
+
+            @include sm{
+                background-image: url('../img/location/mammals_tablet.jpg');
+            }
+
+            @include lg{
+                background-image: url('../img/location/mammals_laptop.jpg');
+            }
+        }
+
+        &_birds::before {
+            background-image: url('../img/location/birds.jpg');
+
+            @include sm{
+                background-image: url('../img/location/birds_tablet.jpg');
+            }
+
+            @include lg{
+                background-image: url('../img/location/birds_laptop.jpg');
+            }
+        }
+
+        &_reptiles::before {
+            background-image: url('../img/location/reptiles.jpg');
+
+            @include sm{
+                background-image: url('../img/location/reptiles_tablet.jpg');
+            }
+
+            @include lg{
+                background-image: url('../img/location/reptiles_laptop.jpg');
+            }
+        }
+
+        &_water::before {
+            background-image: url('../img/location/water.jpg');
+
+            @include sm{
+                background-image: url('../img/location/water_tablet.jpg');
+            }
+
+            @include lg{
+                background-image: url('../img/location/water_laptop.jpg');
+            }
+        }
+
+        &_insects::before {
+            background-image: url('../img/location/insects.jpg');
+
+            @include sm{
+                background-image: url('../img/location/insects_tablet.jpg');
+            }
+
+            @include lg{
+                background-image: url('../img/location/insects_laptop.jpg');
+            }
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 1000;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $back;
+        margin-bottom: 16px;
+        white-space: nowrap;
+
+        @include lg{
+            position: absolute;
+            margin-bottom: 0;
+            color: $second;
+            top: 50%;
+            left: 50%;
+            transform: rotate(-90deg) translate(-50%, -50%);
+            transform-origin: top left;
+        }
+
+        @include xl{
+            font-size: 32px;
+        }
+    }
+
+    &__description {
+        color: $second;
+
+        @include lg{
+            display: none;
+        }
+    }
+}

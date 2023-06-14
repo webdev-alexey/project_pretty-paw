@@ -1,6 +1,8 @@
 import Swiper, {Pagination, Autoplay} from "swiper";
 
-const params = {
+Swiper.use([Pagination, Autoplay]);
+
+const swiper = new Swiper('.about__slider', {
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -12,11 +14,25 @@ const params = {
         el: '.swiper-pagination',
     },
     modules: [Autoplay, Pagination]
-}
+});
 
-export const slidersInit = (selectorSlider, newParams) =>{
-    new Swiper(selectorSlider, {
-        ...params,
-        ...newParams
-    })
-};
+// const params = {
+//     spaceBetween: 20,
+//     loop: true,
+//     autoplay: {
+//         delay: 3500,
+//         disableOnIneraction: false,
+//     },
+//     slidesPerView: 1,
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+//     modules: [Autoplay, Pagination]
+// }
+
+// export const slidersInit = (selectorSlider, newParams) =>{
+//     new Swiper(selectorSlider, {
+//         ...params,
+//         ...newParams
+//     })
+// };

@@ -1,28 +1,21 @@
 .navigation {
+  &__list {
+    display: none;
+  }
 
-    &__list {
-        display: none;
+  &__button {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url("../img/menu.svg") center/contain;
+
+    &_active {
+      background-image: url("../img/close.svg");
     }
 
-    &__item {
+    @include lg {
+      width: 50px;
+      height: 50px;
     }
-
-    &__link {
-    }
-
-    &__button {
-        display: block;
-        width: 36px;
-        height: 36px;
-        background: url('../img/menu.svg') center/contain;
-
-        @include lg{
-            width: 50px;
-            height: 50px;
-        }
-
-        &_active{
-            background-image: url('../img/close.svg');
-        }
-    }
+  }
 }

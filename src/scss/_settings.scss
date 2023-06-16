@@ -10,32 +10,34 @@ html {
 }
 
 body {
-  background-color: $back;
-  color: $main;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 300;
-  line-height: 1.4;
   font-size: 16px;
+  line-height: 1.4;
+  color: $main;
+  background-color: $back;
 
-  @include lg{
+  @include lg {
     font-size: 20px;
   }
 }
 
-img, svg, video {
+img,
+svg,
+video {
   display: block;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
-  height: auto;
 }
 
 button {
-  padding: 0;
-  cursor: pointer;
   border: none;
+  padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 a {
@@ -45,8 +47,8 @@ a {
 
 ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -67,53 +69,53 @@ iframe {
   transform: scale(0);
 }
 
-.video-bg{
+.video-bg {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
   margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
 
-  @include sm{
-    padding-left: 24px;
+  @include sm {
     padding-right: 24px;
+    padding-left: 24px;
   }
 
-  @include md{
-    padding-left: 32px;
+  @include md {
     padding-right: 32px;
+    padding-left: 32px;
   }
 
-  @include xl{
-    padding-left: 30px;
+  @include xl {
     padding-right: 30px;
+    padding-left: 30px;
   }
 
-  @include xxl{
-    padding-left: 60px;
-    padding-right: 60px;
-    max-width: 2560px;
+  @include xxl {
     margin: 0 auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 2560px;
   }
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
+  border-radius: 16px;
   width: 10px;
   height: 10px;
-  border-radius: 16px;
   background-color: $second;
   opacity: 1;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   width: 40px;
   background-color: $back;
 }

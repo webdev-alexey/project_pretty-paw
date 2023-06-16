@@ -6,35 +6,35 @@ $container-width: calc($content-width + ($container-offset * 2));
 
 // colors
 $back: #ffaa05;
-$main: #000000;
-$second: #ffffff;
+$main: #000;
+$second: #fff;
 
 @mixin sm {
-  @media (min-width: 576px){
-      @content;
+  @media (min-width: 576px) {
+    @content;
   }
 }
 
 @mixin md {
-  @media (min-width: 768px){
-      @content;
+  @media (min-width: 768px) {
+    @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: 1024px){
-      @content;
+  @media (min-width: 1024px) {
+    @content;
   }
 }
 
 @mixin xl {
-  @media (min-width: 1240px){
-      @content;
+  @media (min-width: 1240px) {
+    @content;
   }
 }
 
 @mixin xxl {
-  @media (min-width: 1600px){
-      @content;
+  @media (min-width: 1600px) {
+    @content;
   }
 }

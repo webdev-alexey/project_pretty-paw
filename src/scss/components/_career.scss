@@ -53,7 +53,7 @@
     }
   }
 
-  &__link{
+  &__link {
     @include md {
       grid-area: link;
     }

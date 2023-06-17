@@ -13,7 +13,7 @@
   &::before {
     content: "";
     position: absolute;
-    z-index: 8;
+    z-index: 5;
     background-image: linear-gradient(180deg, rgb(0 0 0 / 0%) 35.38%, #000 100%);
     inset: 0;
   }
@@ -68,7 +68,7 @@
   }
 
   &__video-bg {
-    z-index: 5;
+    z-index: 3;
   }
 
   @include md {
@@ -92,6 +92,8 @@
   }
 
   @include xxl {
+    margin: 0 auto;
+    max-width: 2560px;
     background-image:
       image-set(
         url("../img/poster-xl@4x.webp") 2x,

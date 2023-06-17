@@ -1,10 +1,10 @@
-const videoBG = document.querySelector('.video-bg');
+const videoBGElems = document.querySelectorAll('.video-bg');
 
-videoBG.innerHTML = `
+videoSources = `
     <source src="video/video.webm" type="video/webm">
     <source src="video/video.mp4" type="video/mp4">
 `;
 
-videoBG.forEach((item) => {
-  item.innerHTML = videoSourses;
-});
+for(const videoElem of videoBGElems){
+  videoElem.innerHTML = videoSources;
+}

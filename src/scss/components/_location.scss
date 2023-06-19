@@ -39,7 +39,7 @@
       inset: 0;
 
       @include lg {
-        background-image: none !important;
+        background-image: none;
       }
     }
 
@@ -69,42 +69,102 @@
     }
 
     &_mammals::before {
-      background-image: url("../img/location/mammals.jpg");
+      background-image:
+        image-set(
+          url("../img/location/mammals@2x.webp") 2x,
+          url("../img/location/mammals@1x.webp") 1x,
+          url("../img/location/mammals@2x.jpg") 2x,
+          url("../img/location/mammals@1x.jpg") 1x
+        );
 
       @include sm {
-        background-image: url("../img/location/mammals_tablet.jpg");
+        background-image:
+          image-set(
+            url("../img/location/mammals_tablet@2x.webp") 2x,
+            url("../img/location/mammals_tablet@1x.webp") 1x,
+            url("../img/location/mammals_tablet@2x.jpg") 2x,
+            url("../img/location/mammals_tablet@1x.jpg") 1x
+          );
       }
     }
 
     &_birds::before {
-      background-image: url("../img/location/birds.jpg");
+      background-image:
+        image-set(
+          url("../img/location/birds@2x.webp") 2x,
+          url("../img/location/birds@1x.webp") 1x,
+          url("../img/location/birds@2x.jpg") 2x,
+          url("../img/location/birds@1x.jpg") 1x
+        );
 
       @include sm {
-        background-image: url("../img/location/birds_tablet.jpg");
+        background-image:
+          image-set(
+            url("../img/location/birds_tablet@2x.webp") 2x,
+            url("../img/location/birds_tablet@1x.webp") 1x,
+            url("../img/location/birds_tablet@2x.jpg") 2x,
+            url("../img/location/birds_tablet@1x.jpg") 1x
+          );
       }
     }
 
     &_reptiles::before {
-      background-image: url("../img/location/reptiles.jpg");
+      background-image:
+        image-set(
+          url("../img/location/reptiles@2x.webp") 2x,
+          url("../img/location/reptiles@1x.webp") 1x,
+          url("../img/location/reptiles@2x.jpg") 2x,
+          url("../img/location/reptiles@1x.jpg") 1x
+        );
 
       @include sm {
-        background-image: url("../img/location/reptiles_tablet.jpg");
+        background-image:
+          image-set(
+            url("../img/location/reptiles_tablet@2x.webp") 2x,
+            url("../img/location/reptiles_tablet@1x.webp") 1x,
+            url("../img/location/reptiles_tablet@2x.jpg") 2x,
+            url("../img/location/reptiles_tablet@1x.jpg") 1x
+          );
       }
     }
 
     &_water::before {
-      background-image: url("../img/location/water.jpg");
+      background-image:
+        image-set(
+          url("../img/location/water@2x.webp") 2x,
+          url("../img/location/water@1x.webp") 1x,
+          url("../img/location/water@2x.jpg") 2x,
+          url("../img/location/water@1x.jpg") 1x
+        );
 
       @include sm {
-        background-image: url("../img/location/water_tablet.jpg");
+        background-image:
+          image-set(
+            url("../img/location/water_tablet@2x.webp") 2x,
+            url("../img/location/water_tablet@1x.webp") 1x,
+            url("../img/location/water_tablet@2x.jpg") 2x,
+            url("../img/location/water_tablet@1x.jpg") 1x
+          );
       }
     }
 
     &_insects::before {
-      background-image: url("../img/location/insects.jpg");
+      background-image:
+        image-set(
+          url("../img/location/insects@2x.webp") 2x,
+          url("../img/location/insects@1x.webp") 1x,
+          url("../img/location/insects@2x.jpg") 2x,
+          url("../img/location/insects@1x.jpg") 1x
+        );
 
       @include sm {
-        background-image: url("../img/location/insects_tablet.jpg");
+        background-image:
+          image-set(
+            url("../img/location/insects_tablet@2x.webp") 2x,
+            url("../img/location/insects_tablet@1x.webp") 1x,
+            url("../img/location/insects_tablet@2x.jpg") 2x,
+            url("../img/location/insects_tablet@1x.jpg") 1x
+          );
       }
     }
 

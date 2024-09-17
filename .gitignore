@@ -1,3 +1,4 @@
-/node_modules
-/app
+node_modules/
+dist/
+.vscode/
 package-lock.json

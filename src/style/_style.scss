@@ -18,6 +18,10 @@ body {
   color: $main;
   line-height: 1.4;
   font-size: 16px;
+
+  @include lg {
+    font-size: 20px;
+  }
 }
 
 img,
@@ -65,9 +69,48 @@ iframe {
   transform: scale(0);
 }
 
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include xxl {
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    max-width: 2560px;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .container {
-  padding: 0 16px;
-  margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @include sm {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @include md {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @include xl {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @include xxl {
+    margin: 0 auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 2560px;
+  }
 }
 
 .link-main {

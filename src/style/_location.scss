@@ -2,8 +2,8 @@
   position: relative;
 
   &__list {
-    // position: relative;
-    // z-index: 10;
+    position: relative;
+    z-index: 10;
 
     @include lg {
       display: flex;
@@ -101,14 +101,14 @@
         );
       }
 
-      @include lg {
-        background-image: image-set(
-          url("../img/location/mammals_laptop@2x.webp") 2x,
-          url("../img/location/mammals_laptop@1x.webp") 1x,
-          url("../img/location/mammals_laptop@2x.jpg") 2x,
-          url("../img/location/mammals_laptop@1x.jpg") 1x
-        );
-      }
+      // @include lg {
+      //   background-image: image-set(
+      //     url("../img/location/mammals_laptop@2x.webp") 2x,
+      //     url("../img/location/mammals_laptop@1x.webp") 1x,
+      //     url("../img/location/mammals_laptop@2x.jpg") 2x,
+      //     url("../img/location/mammals_laptop@1x.jpg") 1x
+      //   );
+      // }
     }
 
     &_birds::before {
@@ -128,14 +128,14 @@
         );
       }
 
-      @include lg {
-        background-image: image-set(
-          url("../img/location/birds_laptop@2x.webp") 2x,
-          url("../img/location/birds_laptop@1x.webp") 1x,
-          url("../img/location/birds_laptop@2x.jpg") 2x,
-          url("../img/location/birds_laptop@1x.jpg") 1x
-        );
-      }
+      // @include lg {
+      //   background-image: image-set(
+      //     url("../img/location/birds_laptop@2x.webp") 2x,
+      //     url("../img/location/birds_laptop@1x.webp") 1x,
+      //     url("../img/location/birds_laptop@2x.jpg") 2x,
+      //     url("../img/location/birds_laptop@1x.jpg") 1x
+      //   );
+      // }
     }
 
     &_reptiles::before {
@@ -155,14 +155,14 @@
         );
       }
 
-      @include lg {
-        background-image: image-set(
-          url("../img/location/reptiles_laptop@2x.webp") 2x,
-          url("../img/location/reptiles_laptop@1x.webp") 1x,
-          url("../img/location/reptiles_laptop@2x.jpg") 2x,
-          url("../img/location/reptiles_laptop@1x.jpg") 1x
-        );
-      }
+      // @include lg {
+      //   background-image: image-set(
+      //     url("../img/location/reptiles_laptop@2x.webp") 2x,
+      //     url("../img/location/reptiles_laptop@1x.webp") 1x,
+      //     url("../img/location/reptiles_laptop@2x.jpg") 2x,
+      //     url("../img/location/reptiles_laptop@1x.jpg") 1x
+      //   );
+      // }
     }
 
     &_water::before {
@@ -182,14 +182,14 @@
         );
       }
 
-      @include lg {
-        background-image: image-set(
-          url("../img/location/water_laptop@2x.webp") 2x,
-          url("../img/location/water_laptop@1x.webp") 1x,
-          url("../img/location/water_laptop@2x.jpg") 2x,
-          url("../img/location/water_laptop@1x.jpg") 1x
-        );
-      }
+      // @include lg {
+      //   background-image: image-set(
+      //     url("../img/location/water_laptop@2x.webp") 2x,
+      //     url("../img/location/water_laptop@1x.webp") 1x,
+      //     url("../img/location/water_laptop@2x.jpg") 2x,
+      //     url("../img/location/water_laptop@1x.jpg") 1x
+      //   );
+      // }
     }
 
     &_insects::before {
@@ -209,14 +209,14 @@
         );
       }
 
-      @include lg {
-        background-image: image-set(
-          url("../img/location/insects_laptop@2x.webp") 2x,
-          url("../img/location/insects_laptop@1x.webp") 1x,
-          url("../img/location/insects_laptop@2x.jpg") 2x,
-          url("../img/location/insects_laptop@1x.jpg") 1x
-        );
-      }
+      // @include lg {
+      //   background-image: image-set(
+      //     url("../img/location/insects_laptop@2x.webp") 2x,
+      //     url("../img/location/insects_laptop@1x.webp") 1x,
+      //     url("../img/location/insects_laptop@2x.jpg") 2x,
+      //     url("../img/location/insects_laptop@1x.jpg") 1x
+      //   );
+      // }
     }
   }
 

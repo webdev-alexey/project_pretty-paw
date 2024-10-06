@@ -75,42 +75,28 @@
     display: flex;
     align-items: center;
 
-    // @include sm {
-    //   width: 48px;
-    // }
+    @include sm {
+      width: 48%;
+    }
 
     @include md {
-      &:nth-child(odd) {
+      &_odd {
         width: 34%;
       }
 
-      &:nth-child(even) {
+      &_even {
         width: 25%;
       }
-      // &_odd {
-      //
-      // }
-
-      // &_even {
-      //
-      // }
     }
 
     @include xl {
-      &:nth-child(odd) {
+      &_odd {
         width: 27%;
       }
 
-      &:nth-child(even) {
+      &_even {
         width: 20%;
       }
-      // &_odd {
-      //   width: 27%;
-      // }
-
-      // &_even {
-      //   width: 20%;
-      // }
     }
   }
 

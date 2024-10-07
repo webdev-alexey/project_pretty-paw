@@ -57,7 +57,7 @@ export const menuControl = () => {
     }
   };
 
-  const mediaQuery = window.matchMedia("(min-width: 1280px)");
+  const mediaQuery = window.matchMedia("(min-width: 1240px)");
   mediaQuery.addEventListener("change", checkScreenSize);
   checkScreenSize(mediaQuery);
 };
